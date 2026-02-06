@@ -1,0 +1,49 @@
+.box{
+    height: 100px;
+    width: 100px;
+}
+
+/* static : default value : cannot move the element : helper props won't
+work */
+.box1{
+    background-color: red;
+    position: static;
+    left: 300px;
+}
+
+/* relative : element starts moving from its current position and it
+it won't allow other elements to sit in their position so it creates white space */
+.box2{
+    background-color: gold;
+    position: relative;
+    left: 350px;
+    top: 100px;
+    z-index: 1;
+}
+
+/* absolute : element starts moving from its root element and it allows
+other elements to sit in their position so white space will not be created */
+.box3{
+    background-color: blue;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    z-index: -1;
+}
+
+/* fixed : element will take the specified position and it will be 
+fixed over that position */
+.box4{
+    background-color: aqua;
+    position: fixed;
+    left: 400px;
+    top: 200px;
+}
+
+/* sticky : until it reaches the specified position it will be scrollable
+but once it reache the specified position it will stick over there */
+.box5{
+    background-color: orange;
+    position: sticky;
+    top: 20px;
+}

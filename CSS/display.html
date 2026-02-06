@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAY PROP</title>
+    <style>
+        div{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            display: inline;
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+        span{
+            background-color:aqua ;
+            height: 200px;
+            width: 200px;
+            display: block;
+        }
+        .demo{
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline : element will be displayed as inline level element -->
+    <div>I am block-level - inline level </div>
+    <div>I am block-level - inline level </div>
+
+    <!-- block : element will be displayed as block level element -->
+     <span>I am inline - block level</span>
+     <span>I am inline - block level</span>
+
+     <!-- inline-block :  element will be displayed as inline-block level element-->
+    <section class="demo">I am block-level</section>
+    <b class="demo">I am inline-level</b>
+
+    <!-- display : none - element will be displayed as inline-block level element -->
+     <!-- visibility : hidden - -->
+
+    
+</body>
+</html>

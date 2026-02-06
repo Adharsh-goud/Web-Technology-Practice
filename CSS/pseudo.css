@@ -1,0 +1,63 @@
+/* pseudo class selector */
+
+
+
+/*link : to style the unvisited link   */
+a:link{
+    color: rgb(224, 150, 11);
+}
+
+
+/* visited : to style the visited link :- */
+a:visited{
+    color: brown;
+}
+
+/* active : to style active link */
+a:active{
+    color: yellow;
+}
+
+/* hover : to style the element once we 
+hover on it */
+a:hover{
+    color: black;
+}
+
+span:hover{
+    background-color: red;
+}
+
+/* focus : to style the focused input field */
+input:focus{
+    background-color: aquamarine;
+}
+
+/* first child */
+main h2:first-child{
+    color: red;
+}
+
+/* last-child */
+main h2:last-child{
+    color: green;
+}
+
+/* nth-child(num) */
+main h2:nth-child(3){
+    color: orange;
+}
+
+main h2:nth-child(8){
+    color: orange;
+}
+
+/* even/2n  */
+main h2:nth-child(even){
+    background-color: aqua;
+}
+
+/*  odd/2n+1 */
+mai h2:nth-child(odd){
+    background-color: cadetblue;
+}

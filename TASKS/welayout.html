@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS POSITION LAYOUTS</title>
+    <style>
+        *{
+            margin: o;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 18px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        nav{
+            background-color: lightblue;
+            height: 80px;
+            width: 100%;
+        }
+        header{
+            background-color: deepskyblue;
+            height: 80px;
+            width: 100%;
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+        }
+        aside{
+            background-color: gold;
+            height: 600px;
+            width: 30%;
+        }
+        main{
+            background-color: aqua;
+            height: 600px;
+            width: 70%;
+            position: absolute;
+            left: 30%;
+            top: 168px;
+        }
+        footer{
+            background-color: red;
+            height: 100px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>navbar</nav>
+    <header>header</header>
+    <aside>aside</aside>
+    <main>main</main>
+    <footer>footer</footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+</head>
+<body>
+      <!-- action : represents action to be performed once we submit the form -->
+    <!-- type : type of data -->
+     <!-- method : get(default) : data displayed in the url so it is not secured
+      / post : data will not displayed in the url so it is secured -->
+     <!-- for(label) and id(input) : to link input with label 
+      name : value of name attribute acts like variable to store
+       the data entered in the input field-->
+    <form action="" method="post">
+        <fieldset>
+            <legend>PERSONAL DETAILS</legend><br>
+        <LABEL for="user">USERNAME :</LABEL>
+        <input type="text" id="user" name="USERNAME" size="40" placeholder="Example + number + special char."
+          autofocus><br><br>
+
+        <LABEl for="password">PASSWORD :</LABEl>
+        <input type="password" id="password" name="password" minlength="6" required><br><br>
+       
+
+        <label for="mail">EMAIL ID: </label>
+        <input type="email" name="mail" id="mail" placeholder="example@gmail.com" ><br><br>
+
+        <label for="phone">CONTACT :</label>
+        <input type="tel" name="phone" id="phone" minlength="10" maxlength="10"><br><br>
+
+        <label for="dob">DOB :</label>
+        <input type="date" name="dob" id="dob" disabled><br><br>
+
+        <label for="age">AGE :</label>
+        <input type="number" name="age" id="age" min="18" max="35"><br><br>
+
+        <label for="pic"> UPLOAD PROFILE PIC :</label>
+        <input type="file" name="pic" id="pic" multiple><br><br>
+
+        <label for="age">GENDER :</label>
+        <input type="radio" name="age" id="age" >MALE
+        <input type="radio" name="age" id="age">FEMALE
+        <input type="radio" name="age" id="age" disabled>OTHERS <br><br>
+
+        <label for="skill">SKILLS : </label>
+        <input type="checkbox" name="skills" id="skills" value="HTML">HTML
+        <input type="checkbox" name="skills" id="skills" value="CSS">CSS
+        <input type="checkbox" name="skills" id="skills" value="JS">JS
+        <input type="checkbox" name="skills" id="skills" value="PYTHON">PYTHON
+        <input type="checkbox" name="skills" id="skills" value="SQL">SQL <br><br>
+
+
+        <label for="time">PRESENT TIME : </label>
+        <input type="time" name="time" id="time"><br><br>
+
+
+        <label for="q">QUALIFICATION :</label>
+        <select name="q" id="q">
+            <option value="B.TECH">B.TECH</option>
+            <option value="BBA">BBA</option>
+            <option value="MBA">MBA</option>
+            <option value="MS">MS</option>
+        </select><br><br>
+        </fieldset><br><br>
+
+
+        <fieldset>
+            <legend>ADDRESS</legend><br>
+        <label for="state">STATE :</label>
+        <input type="text" name="state" id="state" list="s">
+        <datalist id="s" >
+            <option value="HYDPUNE">HYD</option>
+            <option value="PUNE">PUNE</option>
+            <option value="MUMBAI">MUMBAI</option>
+            <option value="CHENNAI">CHENNAI</option>
+        </datalist><br><br>
+
+        <label for="city"> CITY :</label>
+        <select  name="city" id="city">
+        <optgroup label="TELANGANA">
+            <option value="HYD">HYD</option>
+            <option value="YADADRI">YADADRI</option>
+            <option value="SEC">SEC</option>
+            <option value="AHEMABAD">AHEMABAD</option>
+        </optgroup>
+        <optgroup label="KERALA">
+            <option value="KOCHI">KOCHI</option>
+            <option value="THIRUVANANTHAPURAM">THIRUVANANTHAPURAM</option>
+            <option value="KOLLAM">KOLLAM</option>
+            <option value="KOTI">KOTI</option>
+        </optgroup>
+        </select><br><br>
+
+        <label for="address">ADDRESS :</label>
+        <textarea name="address" id="address"></textarea><br><br>
+        </fieldset><br><br>
+
+        <!-- <button type="submit">SUBMIT</button> -->
+        <input type="image" src="https://www.codewithfaraz.com/
+        img/how%20to%20create%20morphing%20submit%20button%20using%20css.png" height="50px" width="100px">
+        <button type="reset">RESET</button><br><br>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/*  Unicersal selector (*) : all the elements of html file*/
+*{
+    border: 2px solid darkblue ;
+}
+
+
+
+/* Id selector(#) */
+#text{
+    color: blue;
+}
+
+/* class selector(.) */
+.btn{
+    background-color: aqua;
+}
+
+.btn1{
+    color: red;
+}
+
+/*  Grouping selector(,) : group more than one simple selector and we will
+target  */
+
+#text,.btn,div{
+    font-size: 20px;
+}

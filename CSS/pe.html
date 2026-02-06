@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        p::first-letter{
+            color: red;
+            font-size: 50px;
+        }
+
+        p::first-line{
+            background-color: aqua;
+        }
+
+        p::before{
+            content: "Hello everyone ....!";
+        }
+
+        p::after{
+            content: "bye everyone ...!";
+        }
+
+        p::selection{
+            background-color: gold;
+            color: brown;
+        }
+
+        ul li::marker{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pseudo element selectors : to style first-letter , first-line,before,after
+       selection,marker-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laudantium et laborum odio illo itaque ullam eveniet ea, aliquid accusantium quam a veniam praesentium, doloremque debitis asperiores quo alias? Eligendi
+         voluptatem accusamus quaerat, architecto autem corrupti ea impedit ad delectus consequuntur alias velit temporibus praesentium vitae sequi vel unde recusandae.
+    </p>
+
+    <ul>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+    
+</body>
+</html>

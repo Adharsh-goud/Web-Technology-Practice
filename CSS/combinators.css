@@ -1,0 +1,20 @@
+/* descendent selector( ) */
+#img_blk img{
+    height: 200px;
+    width: 250px;
+}
+
+/* child selector(>) */
+#img_blk>img{
+    border: 5px solid blue;
+}
+
+/* Adjecent sibling selector (+) */
+p+button {
+    background-color: gold;
+}
+
+/*  General sibling selector (~) */
+p~button{
+    border: 4px solid blue;
+}

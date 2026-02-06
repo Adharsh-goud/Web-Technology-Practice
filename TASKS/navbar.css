@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav_blk{
+    background-color: rgb(229, 180, 88);
+    height: 80px;
+    width: 100%;
+}
+
+#nav_blk ul{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#nav_blk ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-transform: lowercase;
+}
+
+#nav_blk ul li a:hover{
+    text-decoration: underline black;
+    text-shadow: 2px 2px 5px white;
+}

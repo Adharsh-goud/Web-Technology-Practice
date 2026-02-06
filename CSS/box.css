@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+h2{
+    height: 150px;
+    width: 400;
+    padding: 65px;
+    color: red;
+    border: 5px dashed brown;
+    /* thickness-style(solid/dashed/dotted/double/wavy)-color */
+
+    /* padding : space around the content */
+    /* padding:20px 30px 10px 40px; */
+    /*  t r b l */
+    /* t lr b */
+    /* tb lr */
+    /* padding-left: 30px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-top: 40px; */
+
+    /* margin : space around the border */
+    /* margin:10px 20px 30px 40px; */
+    
+    /* t r b l */
+    /* t lr b */
+    /* tb lr */
+    /* trbl */
+    /* margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 25px; */
+
+    border-radius: 10px;
+    box-shadow: 2px 1px 5px black;
+    /* x-axis y-axis blurness colorlo */
+
+   
+}

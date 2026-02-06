@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://img.freepik.com/free-vector/flat-design-minimalist-background_23-2149955622.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        h1{
+            margin: 10px;
+        }
+        #demo{
+            color: rosybrown;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Home page</h1>
+    <h1 id="demo"></h1>
+
+    <script>
+        let uname = localStorage.getItem('username')
+        document.getElementById("demo").innerText = `Dear user ${uname} wel-come to our web-page`
+    </script>
+    
+</body>
+</html>

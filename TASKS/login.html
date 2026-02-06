@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://img.freepik.com/free-vector/flat-design-minimalist-background_23-2149955622.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+        }
+        h1{
+            color: rgb(137, 103, 103);
+        }
+        form{
+            /* border: 1px solid; */
+            box-shadow: 2px 3px 10px rosybrown;
+            height: 200px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 20px 0px;
+            border-radius: 10px;
+        }
+        form input{
+            padding: 0px 10px;
+            height: 40px;
+            width: 250px;
+            outline: none;
+            border: 1px solid lightgrey ;
+            border-radius: 5px;
+        }
+        form input:focus{
+            box-shadow: 2px 1px 5px rgb(173, 212, 200);
+        }
+        form button{
+            height: 40px;
+            width: 250px;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            border: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>login Here</h1>
+
+    <form action="">
+        <input type="text" placeholder="Username" required id="uname">
+        <input type="password" placeholder="Password" required id="pwd">
+        <button type="submit">login</button>
+    </form>
+    
+
+    <script>
+        let signup = document.forms[0]
+        console.log(signup);
+        signup.addEventListener('submit',(e)=>{
+            e.preventDefault()
+            let user = document.getElementById('uname').value
+            let password = document.getElementById('pwd').value
+            console.log(user,password);
+            let luser = localStorage.getItem('username')
+            let lpwd = localStorage.getItem('password')
+            console.log(luser,lpwd);
+            if(luser !== user){
+                alert('User not found')
+            }
+            else if(lpwd !== password){
+                alert('Incorrect password')
+            }
+            else{
+                alert('Login sucessful...!')
+                location.assign("./home.html")
+            }
+        })
+    </script>
+    
+</body>
+</html>

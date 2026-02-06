@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap');
+
+
+body{
+    /* background-color: aqua; */
+    background-image:url("https://images.unsplash.com/photo-1584993358834-f8deafc4f3c5?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHRlZGR5JTIwYmVhcnxlbnwwfHwwfHx8MA%3D%3D");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-image: linear-gradient(to left top, red,yellow,green,blue); */
+    background-image: radial-gradient(circle, green,black);
+    /* background-image: conic-gradient(red,yellow); */
+}
+#text{
+    /* color: blue; */
+    /* color: rgb(64, 119, 228); */
+    /* 0-9 a-f */
+    /* color: rgb(9, 138, 60); */
+    /* rgb = red , green,blue */
+    color: rgba(225, 11, 11, 0.985);
+
+    text-align: center;
+    /* left/right/center/justify */
+
+    text-transform: capitalize;
+    /* uppercase/lowercase/capitalize */
+
+    text-shadow: 2px 2px 5px red;
+    /* x-axis y-axis blurness color */
+
+    text-decoration: 2px double underline blue;
+    /* text-decoration-line: overline; */
+    /* underline/overline/line-through */
+    /* text-decoration-style: dotted; */
+    /* solid/dotted/dashed/double/wavy */
+    /* text-decoration-color: brown; */
+    /* text-decoration-thickness: 1px; */
+}
+
+p{
+    text-align: justify;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 2;
+    text-indent: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+     font-family: "BBH Hegarty", sans-serif;
+
+}

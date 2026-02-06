@@ -1,0 +1,46 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    /* adding transition effect */
+    /* transition-property: background-color;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease; */
+    transition: background-color 4s 1s linear, border 4s 1s linear;
+    transition: transform 2s linear;
+}
+
+div:hover{
+    /* background-color: blue;
+    border: 15px solid yellow; */
+
+    /* transform: translate(px) : move the element */
+    transform: translateX(200px);
+    transform: translateY(200px);
+    transform: translateZ(200px);
+    transform: translate(200px,200px);
+
+    /* transfoem : scale(num) : change the size of an element*/
+    transform: scaleX(2);
+    transform: scaleY(3);
+    transform: scale(3);
+
+    /* transform : skew(deg) : to bend the element */
+    transform: skewX(20deg);
+    transform: skewY(40deg);
+    transform: skew(20deg,45deg);
+
+    /* transform : rotate(deg) : rotate the element */
+    transform: rotate(180deg);
+}
+

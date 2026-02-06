@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLE</title>
+</head>
+<body>
+    <!-- cellspacing : space between the cell/ space around the border of cell
+      cellpadding : space around the content / space between the border and content -->
+    <table border="1" cellspacing="10px" cellpadding="10px" height="500px" width="500px" >
+        <tbody>
+           <tr>
+            <th>SL.NO</th>
+            <th>EMPLOYEE NAME</th>
+            <th>SALARY</th>
+            <th>LOCATION</th>
+           </tr>
+
+           <tr>
+            <td>1</td>
+            <td>JUNNU</td>
+            <td>50000</td>
+            <td rowspan="2" >HYD</td>
+           </tr>
+           <tr>
+            <td>2</td>
+            <td>ADHARSH</td>
+            <td>30000</td>
+            <!-- <td >HYD</td> -->
+           </tr>
+
+           <TR>
+            <TD>3</TD>
+            <TD>SRIKANTH</TD>
+            <TD rowspan="4">20000</TD>
+            <TD>CHENNAI</TD>
+           </TR>
+           <TR>
+            <TD>4</TD>
+            <TD>KALYANI</TD>
+            <!-- <TD>20000</TD> -->
+            <TD>DELHI</TD>
+           </TR>
+
+           <tfoot>
+            <tr>
+                <td colspan="3">Total number of employees : </td>
+                <!-- <td></td>
+                <td></td> -->
+                <td>04</td>
+            </tr>
+           </tfoot>
+
+    
+        </tbody>
+    </table>
+    
+</body>
+</html>

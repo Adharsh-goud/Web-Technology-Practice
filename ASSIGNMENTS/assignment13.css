@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+
+#navbar{
+    margin-left: auto;
+    display: flex;
+    gap: 40px;
+    
+    
+}
+
+
+.logo img{
+    height: 55px;
+    background-color: white;
+    width: 100%;
+
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+

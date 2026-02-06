@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+#card{
+    margin: auto;
+    height: 300px;
+    width: 250px;
+    text-align: center;
+    line-height: 2;
+    border-radius: 20px;
+    padding-top: 20px;
+    color: white;
+    background-image: linear-gradient(to right bottom, aqua,black);
+    margin-top: 40px;
+    box-shadow: 3px 3px 15px gray;
+}
+
+#card img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50px;
+}

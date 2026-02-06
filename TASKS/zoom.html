@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ZOOM</title>
+    <style>
+        section{
+            height: 300px;
+            width: 330px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 2px 2px 15px black;
+            display: inline-block;
+        }
+        section img{
+            height: inherit;
+            width: inherit;
+            border-radius: inherit;
+            transition: transform 3s ease;
+        }
+        section img:hover{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <img src="../ASSETS/mrbeast1.jpg" alt="mr.beast">
+    </section>
+    <section>
+        <img src="../ASSETS/mrbeast1.jpg" alt="mr.beast">
+    </section>
+    <section>
+        <img src="../ASSETS/mrbeast1.jpg" alt="mr.beast">
+    </section>
+    <section>
+        <img src="../ASSETS/mrbeast1.jpg" alt="mr.beast">
+    </section>
+    
+</body>
+</html>

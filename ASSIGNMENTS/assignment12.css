@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(25, 105, 202);
+}
+
+#navbar{
+    background-color: black;
+    height: 85px;
+    width: 100%;
+}
+
+#navbar ul{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+#navbar ul li a:hover{
+    text-shadow: 10px 10px 10px grey;
+    text-decoration: underline;
+}
+
+
+
